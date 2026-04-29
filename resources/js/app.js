@@ -47,6 +47,16 @@ if (themeToggle) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = Array.from(document.querySelectorAll('[data-nav-link]'));
+    const activitiesMonths = document.getElementById('activities-months');
+    const activitiesList = document.getElementById('activities-list');
+    const activitiesData = window.activitiesData ?? [];
+    const activityLightbox = document.getElementById('activity-lightbox');
+    const activityLightboxImages = document.getElementById('activity-lightbox-images');
+    const activityLightboxMonth = document.getElementById('activity-lightbox-month');
+    const activityLightboxWeek = document.getElementById('activity-lightbox-week');
+    const activityLightboxDate = document.getElementById('activity-lightbox-date');
+    const activityLightboxDescription = document.getElementById('activity-lightbox-description');
+
     const setActiveLink = (targetId) => {
         navLinks.forEach((link) => {
             const isActive = link.dataset.navTarget === targetId;
@@ -93,13 +103,74 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateActiveFromScroll, { passive: true });
     updateActiveFromScroll();
 
-    const activitiesMonths = document.getElementById('activities-months');
-    const activitiesList = document.getElementById('activities-list');
-    const activitiesData = window.activitiesData ?? [];
-
     if (!activitiesMonths || !activitiesList || activitiesData.length === 0) {
         return;
     }
+
+    let activeMonth = activitiesData[0];
+
+    const openActivityLightbox = (month, weekItem) => {
+        if (
+            !activityLightbox ||
+            !activityLightboxImages ||
+            !activityLightboxMonth ||
+            !activityLightboxWeek ||
+            !activityLightboxDate ||
+            !activityLightboxDescription
+        ) {
+            return;
+        }
+
+        const imageSources = [weekItem.img ?? month.img, weekItem.img2 ?? weekItem.img ?? month.img];
+
+        activityLightboxMonth.textContent = `${month.month} ${month.year}`;
+        activityLightboxWeek.textContent = weekItem.week ?? month.month;
+        activityLightboxDate.textContent = weekItem.date ?? '';
+        activityLightboxDescription.innerHTML = weekItem.description ?? month.description ?? '';
+        activityLightboxImages.innerHTML = imageSources
+            .map((source, index) => `
+                <div class="overflow-hidden rounded-[1.5rem] bg-slate-200 dark:bg-slate-800">
+                    <img
+                        class="h-full max-h-[26rem] w-full object-cover"
+                        src="${source}"
+                        alt="${month.month} ${weekItem.week} preview image ${index + 1}"
+                    />
+                </div>
+            `)
+            .join('');
+
+        activityLightbox.classList.remove('pointer-events-none', 'opacity-0');
+        activityLightbox.classList.add('pointer-events-auto', 'opacity-100');
+
+        const lightboxPanel = activityLightbox.querySelector('.scale-95');
+
+        if (lightboxPanel) {
+            lightboxPanel.classList.remove('scale-95');
+            lightboxPanel.classList.add('scale-100');
+        }
+
+        document.body.classList.add('overflow-hidden');
+        activityLightbox.setAttribute('aria-hidden', 'false');
+    };
+
+    const closeActivityLightbox = () => {
+        if (!activityLightbox) {
+            return;
+        }
+
+        activityLightbox.classList.remove('pointer-events-auto', 'opacity-100');
+        activityLightbox.classList.add('pointer-events-none', 'opacity-0');
+
+        const lightboxPanel = activityLightbox.querySelector('.scale-100');
+
+        if (lightboxPanel) {
+            lightboxPanel.classList.remove('scale-100');
+            lightboxPanel.classList.add('scale-95');
+        }
+
+        document.body.classList.remove('overflow-hidden');
+        activityLightbox.setAttribute('aria-hidden', 'true');
+    };
 
     const renderActivities = (activeMonth) => {
         const weekDetails = activeMonth.weeks ?? [];
@@ -109,11 +180,19 @@ document.addEventListener('DOMContentLoaded', () => {
         activitiesList.className = `mt-6 grid gap-4 md:grid-cols-2${isFewWeeks ? ' md:place-items-center' : ''}`;
 
         activitiesList.innerHTML = weekDetails
-            .map((weekItem) => `
-                <div class="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+            .map((weekItem, index) => `
+                <button
+                    type="button"
+                    class="activity-card group w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-slate-400 dark:border-slate-800 dark:bg-slate-900 dark:focus:ring-slate-600"
+                    data-activity-week="${index}"
+                >
                     <div class="grid grid-cols-2 gap-3">
-                        <img class="h-50 w-full rounded-xl object-cover" src="${weekItem.img ?? activeMonth.img}" alt="${activeMonth.month} activity ${weekItem.week} image 1" />
-                        <img class="h-50 w-full rounded-xl object-cover" src="${weekItem.img2 ?? activeMonth.img}" alt="${activeMonth.month} activity ${weekItem.week} image 2" />
+                        <div class="overflow-hidden rounded-xl">
+                            <img class="h-50 w-full object-cover transition duration-500 group-hover:scale-105" src="${weekItem.img ?? activeMonth.img}" alt="${activeMonth.month} activity ${weekItem.week} image 1" />
+                        </div>
+                        <div class="overflow-hidden rounded-xl">
+                            <img class="h-50 w-full object-cover transition duration-500 group-hover:scale-105" src="${weekItem.img2 ?? activeMonth.img}" alt="${activeMonth.month} activity ${weekItem.week} image 2" />
+                        </div>
                     </div>
                     <div class="mt-4 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                         <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1 dark:border-slate-700">
@@ -138,7 +217,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                         ${weekItem.description ?? activeMonth.description}
                     </p>
-                </div>
+                    <span class="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500 transition group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-white">
+                        View full preview
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path d="M7 17L17 7"></path>
+                            <path d="M9 7h8v8"></path>
+                        </svg>
+                    </span>
+                </button>
             `)
             .join('');
     };
@@ -177,8 +263,37 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        activeMonth = selectedMonth;
         setActiveButton(selectedMonth);
         renderActivities(selectedMonth);
+    });
+
+    activitiesList.addEventListener('click', (event) => {
+        const activityCard = event.target.closest('[data-activity-week]');
+
+        if (!activityCard) {
+            return;
+        }
+
+        const weekItem = activeMonth.weeks?.[Number(activityCard.dataset.activityWeek)];
+
+        if (!weekItem) {
+            return;
+        }
+
+        openActivityLightbox(activeMonth, weekItem);
+    });
+
+    activityLightbox?.addEventListener('click', (event) => {
+        if (event.target.closest('[data-lightbox-close]')) {
+            closeActivityLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && activityLightbox?.getAttribute('aria-hidden') === 'false') {
+            closeActivityLightbox();
+        }
     });
 
     setActiveButton(firstMonth);

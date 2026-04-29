@@ -468,6 +468,40 @@
                 <div class="mt-6 flex flex-wrap justify-center gap-3" id="activities-months"></div>
                 <div class="mt-6 grid gap-4 md:grid-cols-2" id="activities-list"></div>
             </section>
+
+            <div
+                id="activity-lightbox"
+                class="pointer-events-none fixed inset-0 z-[70] flex items-center justify-center bg-slate-950/80 px-4 py-6 opacity-0 transition duration-300"
+                aria-hidden="true"
+            >
+                <div class="absolute inset-0" data-lightbox-close></div>
+                <div class="relative z-10 w-full max-w-6xl scale-95 overflow-hidden rounded-[2rem] border border-white/10 bg-white shadow-2xl transition duration-300 dark:bg-slate-950">
+                    <button
+                        type="button"
+                        class="absolute right-4 top-4 z-20 flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-lg transition hover:scale-105 hover:text-slate-950 dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:text-white"
+                        data-lightbox-close
+                        aria-label="Close activity preview"
+                    >
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M6 6l12 12"></path>
+                            <path d="M18 6l-12 12"></path>
+                        </svg>
+                    </button>
+
+                    <div class="grid max-h-[90vh] overflow-y-auto lg:grid-cols-[1.2fr,0.8fr]">
+                        <div class="grid gap-3 bg-slate-100 p-4 dark:bg-slate-900 md:grid-cols-2" id="activity-lightbox-images"></div>
+                        <div class="flex flex-col gap-5 p-6 md:p-8">
+                            <div class="space-y-3">
+                                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400" id="activity-lightbox-month"></p>
+                                <h3 class="text-2xl font-semibold text-slate-900 dark:text-white" id="activity-lightbox-week"></h3>
+                                <p class="inline-flex w-fit items-center rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:border-slate-700 dark:text-slate-300" id="activity-lightbox-date"></p>
+                            </div>
+                            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-300" id="activity-lightbox-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <script>
                 window.activitiesData = [
                     {
@@ -495,40 +529,72 @@
                                 img: "{{ asset('images/activities/febweek1.png') }}",
                                 img2: "{{ asset('images/Activities/febweek1_1.png') }}",
                                 week: 'Week 1',
-                                date: 'Feb 2–6, 2025',
+                                date: 'Feb 2–6, 2026',
                                 description: ' During the second week, I focused on learning the Laravel framework in more detail, including how it works with databases. I was introduced to important concepts such as models, controllers, routes, and database migrations. As part of our task, I created a simple CRUD (Create, Read, Update, Delete) application using Laravel. This activity helped me understand how data flows from the database to the system and how Laravel makes development more organized and efficient. ',
                             },
                              {
-                                img: "{{ asset('images/activities/february-week-1.png') }}",
+                                img: "{{ asset('images/activities/febweek2_1.png') }}",
+                                img2: "{{ asset('images/Activities/febweek2_2.png') }}",
                                 week: 'Week 2',
-                                date: 'Feb 9–13, 2025',
+                                date: 'Feb 9–13, 2026',
                                 description: '  This week, I worked on a mini project called Konek, a contact management system, where my supervisor assigned me several tasks that improved my technical and web development skills. I developed a feature for CRUD (Create, Read, Update, Delete) User Management system that handled two roles: admin, who has full control, and normal users, who have limited access. I also implemented user seeding in Laravel to create default users for testing and development. In addition, I added contact restrictions based on ownership, ensuring that users could only view and manage their own contacts, which enhanced the system’s security and protected data privacy.',
                             },
                             {
-                                img: "{{ asset('images/activities/february-week-1.png') }}",
+                                img: "{{ asset('images/activities/febweek3_1.png') }}",
+                                img2: "{{ asset('images/Activities/febweek3_2.png') }}",
                                 week: 'Week 3',
-                                date: 'Feb 16–20, 2025',
+                                date: 'Feb 16–20, 2026',
                                 description: '  This week, my supervisor assigned me a task to implement the importing and exporting of contacts in different file formats, including CSV, XLSX, and XLS. After completing the main task, he reviewed my work and gave me a subtask for improvement. I then worked on fixing and refining the system based on the feedback provided to ensure the feature functioned correctly and efficiently. ',
                             },
                             {
-                                img: "{{ asset('images/activities/february-week-1.png') }}",
+                                img: "{{ asset('images/activities/feb4_1.png') }}",
+                                img2: "{{ asset('images/activities/feb4_2.png') }}",
                                 week: 'Week 4',
-                                date: 'Feb 23–27, 2025',
+                                date: 'Feb 23–27, 2026',
                                 description: '    This week, I had the opportunity to attend a seminar in Medellin, Cebu, about ISLET Connect by Starlink, where I learned how it works, how to connect, and about related tools and the BEST Barangay e-System. I also participated in data collection, profiling residents in a selected barangay to gather accurate information directly from the community. In addition, my supervisor assigned me a task for the mini project Konek, where I worked on designing the system’s homepage.',
                             },
                         ],
                     },
                     {
                         month: 'March',
-                        year: 2025,
+                        year: 2026,
                         img: "{{ asset('images/activities/march.png') }}",
                         description: 'Default March description.',
                         weeks: [
                             {
-                                img: "{{ asset('images/activities/march-week-1.png') }}",
+                                img: "{{ asset('images/activities/marchweek1.png') }}",
+                                img2: "{{ asset('images/activities/marchweek1_1.png') }}",
                                 week: 'Week 1',
-                                date: 'Mar 3–7, 2025',
-                                description: 'Add your March week 1 description here.',
+                                date: 'Mar 3–6, 2026',
+                                description: '   I worked on creating the current homepage for the mini project, the Konek Management System, while coordinating with our supervisor for design checking and feedback. This involved refining the layout, improving the visual structure, and ensuring that the interface met the required standards. After completing these tasks, I shifted my focus to learning about Docker, exploring its basic concepts, functions, and how it can be used to manage and deploy applications efficiently. ',
+                            },
+                            {
+                                img: "{{ asset('images/activities/marchweek2_1.png') }}",
+                                img2: "{{ asset('images/activities/marchweek2_2.png') }}",
+                                week: 'Week 2',
+                                date: 'Mar 9–13, 2026',
+                                description: '  I set up WSL with AlmaLinux 9 and installed the necessary dependencies for Laravel development within the environment. After completing the setup, I was assigned to implement a Laravel Typesense feature using the WSL-based development setup, which involved configuring and integrating search functionality. I then proceeded to work on another Laravel task that utilized Laravel as the backend, React.js as the frontend, and Inertia to connect both sides, allowing for a more seamless and dynamic application flow.',
+                            },
+                            {
+                                img: "{{ asset('images/activities/marchweek3_1.png') }}",
+                                img2: "{{ asset('images/activities/marchweek3_2.png') }}",
+                                week: 'Week 3',
+                                date: 'Mar 16–20, 2026',
+                                description: '  I applied what I learned in Laravel, React, and Inertia.js by implementing a user management system, focusing on creating CRUD functionalities for a school management system. After completing the initial implementation, I received feedback from my supervisor, which helped refine and improve the system. I then proceeded to implement additional features, specifically the import and export of users based on their roles within the school. ',
+                            },
+                            {
+                                img: "{{ asset('images/activities/march-week-1.png') }}",
+                                img2: "{{ asset('images/activities/march-week-1.png') }}",
+                                week: 'Week 4',
+                                date: 'Mar 23–27, 2026',
+                                description: ' During this period, I learned the basics of n8n and applied my knowledge by developing an automation task for DTR using a webhook, which automatically distributed data to Notion, Excel, and email notifications. I also assisted in the installation of Starlink to improve connectivity in the barangays and at the school in Caputatan Sur and Canhabagat, where I helped handle fiber optic cables and RJ45 connections. In addition, I attended a seminar on ISLET Connect and disaster risk reduction held at Medellin Central School. After these activities, I continued working in the office to further enhance and complete my n8n automation task.',
+                            },
+                            {
+                                img: "{{ asset('images/activities/march-week-1.png') }}",
+                                img2: "{{ asset('images/activities/march-week-1.png') }}",
+                                week: 'Spillover Days',
+                                date: 'Mar 30 – April 03, 2026',
+                                description: '   During this period, I focused on studying and learning Coolify.io, exploring its features, setup process, and how it can be used as a self-hosted platform for deploying and managing applications. ',
                             },
                         ],
                     },
