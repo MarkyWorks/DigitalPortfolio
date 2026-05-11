@@ -856,22 +856,210 @@
             </section>
 
             <section id="reflection" class="scroll-mt-24 mt-16">
-               <p class="text-center text-lg uppercase tracking-[0.45em] font-semibold text-slate-500 dark:text-slate-400">Reflection</p>
-                <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Add reflection content here.</p>
+                <p class="text-center text-lg font-semibold uppercase tracking-[0.45em] text-slate-500 dark:text-slate-400">Reflection</p>
+                <div class="mt-8 grid gap-5 md:grid-cols-2">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-sky-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 ring-8 ring-sky-50 transition duration-300 group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white group-hover:ring-sky-100 dark:bg-sky-950/70 dark:text-sky-300 dark:ring-sky-950/60 dark:group-hover:bg-sky-500 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M12 3v18"></path>
+                                    <path d="M5 10l7-7 7 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Expectation</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            My expectation of this OJT was to learn different technologies and improve my knowledge in various tech stacks. However, throughout my internship and training experience, I learned far more than I expected by gaining hands-on experience in development, networking, deployment, automation, and real-world technical tasks.
+                        </p>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-fuchsia-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-fuchsia-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-700 ring-8 ring-fuchsia-50 transition duration-300 group-hover:scale-110 group-hover:bg-fuchsia-600 group-hover:text-white group-hover:ring-fuchsia-100 dark:bg-fuchsia-950/70 dark:text-fuchsia-300 dark:ring-fuchsia-950/60 dark:group-hover:bg-fuchsia-500 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M4 6h16"></path>
+                                    <path d="M4 12h16"></path>
+                                    <path d="M4 18h10"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Experiences</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                           Throughout my activities, I experienced working on different technical and community-based tasks such as developing systems using Laravel, React, and Inertia.js, creating CRUD functionalities, implementing automation workflows using n8n, and deploying applications using Coolify and Laravel Cloud. I also experienced hands-on networking activities, including Starlink installation, UTP cabling, and assisting in connectivity projects. In addition, I participated in data collection, presentations, pilot testing, and system proposal development, which improved both my technical and communication skills.
+                        </p>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-amber-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 ring-8 ring-amber-50 transition duration-300 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white group-hover:ring-amber-100 dark:bg-amber-950/70 dark:text-amber-300 dark:ring-amber-950/60 dark:group-hover:bg-amber-400 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M12 8v5"></path>
+                                    <path d="M12 17h.01"></path>
+                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Challenges</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                           I encountered different challenges while learning new technologies, handling deployments, debugging systems, and adjusting to real-world technical environments. Some tasks were difficult at first, especially when dealing with unfamiliar tools and troubleshooting issues. However, with the guidance of my supervisor, continuous practice, and the help of AI tools, I was able to overcome these challenges and continue improving my skills and knowledge.
+                        </p>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-emerald-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-8 ring-emerald-50 transition duration-300 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:ring-emerald-100 dark:bg-emerald-950/70 dark:text-emerald-300 dark:ring-emerald-950/60 dark:group-hover:bg-emerald-500 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M5 12l5 5L20 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Output</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Through these experiences, I developed skills in Laravel with Blade, Laravel deployment using Laravel Cloud and Coolify, Laravel with React and Inertia.js, workflow automation using n8n, frontend and backend development, networking, and system implementation. I also improved my problem-solving, adaptability, and technical understanding through the different learning activities and real-world tasks I performed.
+                        </p>
+                    </article>
+                </div>
             </section>
 
             <section id="recommendations" class="scroll-mt-24 mt-16">
-                <p class="text-center text-lg uppercase tracking-[0.45em] font-semibold text-slate-500 dark:text-slate-400">Recommendations</p>
-                <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Add recommendations content here.</p>
+                <p class="text-center text-lg font-semibold uppercase tracking-[0.45em] text-slate-500 dark:text-slate-400">Recommendations</p>
+                <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-sky-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 ring-8 ring-sky-50 transition duration-300 group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white group-hover:ring-sky-100 dark:bg-sky-950/70 dark:text-sky-300 dark:ring-sky-950/60 dark:group-hover:bg-sky-500 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Hands-On Training</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            I recommend that the company continue providing hands-on training and real-world technical tasks for interns and trainees because these activities greatly help in improving practical skills and industry knowledge.
+                        </p>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-fuchsia-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-fuchsia-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-700 ring-8 ring-fuchsia-50 transition duration-300 group-hover:scale-110 group-hover:bg-fuchsia-600 group-hover:text-white group-hover:ring-fuchsia-100 dark:bg-fuchsia-950/70 dark:text-fuchsia-300 dark:ring-fuchsia-950/60 dark:group-hover:bg-fuchsia-500 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M4 7h16"></path>
+                                    <path d="M4 12h16"></path>
+                                    <path d="M4 17h10"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">More Opportunities</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            It would also be beneficial to provide more internship slots and create designated working areas or spaces for trainees to ensure a more comfortable, organized, and productive learning environment.
+                        </p>
+                    </article>
+
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-emerald-500/40">
+                        <div class="flex items-center gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-8 ring-emerald-50 transition duration-300 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:ring-emerald-100 dark:bg-emerald-950/70 dark:text-emerald-300 dark:ring-emerald-950/60 dark:group-hover:bg-emerald-500 dark:group-hover:text-slate-950">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M12 14v7"></path>
+                                    <path d="M5 10a7 7 0 1 1 14 0c0 3-2 4.5-3.5 5.5-.8.5-1.5 1.1-1.5 2.5h-4c0-1.4-.7-2-1.5-2.5C7 14.5 5 13 5 10z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Mentorship</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            In addition, continuing mentorship and guidance from supervisors can further help trainees improve their technical abilities, confidence, and professional growth.
+                        </p>
+                    </article>
+                </div>
             </section>
 
             <section id="appendices" class="scroll-mt-24 mt-16">
                 <p class="text-center text-lg uppercase tracking-[0.45em] font-semibold text-slate-500 dark:text-slate-400">Appendices</p>
                 <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Add appendices content here.</p>
             </section>
-
-
         </main>
+
+        <footer class="relative mt-20 overflow-hidden border-t border-slate-200/70 bg-slate-950 text-slate-200 dark:border-slate-800">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.18),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(217,70,239,0.16),_transparent_30%)]"></div>
+            <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+
+            <div class="relative mx-auto max-w-6xl px-6 py-14">
+                <div class="grid gap-10 lg:grid-cols-[1.2fr,0.8fr,0.8fr]">
+                    <div>
+                        <div class="flex items-center gap-4">
+
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-sky-300">Digital Journal</p>
+                                <h3 class="mt-1 text-2xl font-semibold text-white">Mark Cleo Calbang</h3>
+                            </div>
+                        </div>
+                        <p class="mt-5 max-w-xl text-sm leading-relaxed text-slate-300">
+                            A portfolio-style internship journal that highlights my training, technical growth, outputs, and experiences at Central Visayas Information Sharing Network Foundation, Inc.
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <a class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:-translate-y-0.5 hover:border-sky-300/50 hover:bg-sky-400/10 hover:text-white" href="mailto:markcleocalbang05@gmail.com">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13 22 6.01V6H2zm20 2.24l-9.4 6.58a1 1 0 0 1-1.2 0L2 8.24V18h20V8.24z" />
+                                </svg>
+                                Email Me
+                            </a>
+                            <a class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:-translate-y-0.5 hover:border-fuchsia-300/50 hover:bg-fuchsia-400/10 hover:text-white" href="https://github.com/MarkyWorks" target="_blank" rel="noopener noreferrer">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.64-1.35-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.39-2.02 1.03-2.73-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.23 9.23 0 0 1 12 7.3c.85 0 1.71.12 2.5.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.71 1.03 1.62 1.03 2.73 0 3.92-2.35 4.79-4.58 5.04.36.32.69.94.69 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.05 10.05 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">Quick Links</h4>
+                        <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+                            <a class="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-sky-300/40 hover:bg-white/10 hover:text-white" href="#home">Home</a>
+                            <a class="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-sky-300/40 hover:bg-white/10 hover:text-white" href="#company-about">About</a>
+                            <a class="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-sky-300/40 hover:bg-white/10 hover:text-white" href="#activities">Activities</a>
+                            <a class="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-sky-300/40 hover:bg-white/10 hover:text-white" href="#skills">Skills</a>
+                            <a class="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-sky-300/40 hover:bg-white/10 hover:text-white" href="#reflection">Reflection</a>
+                            <a class="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-sky-300/40 hover:bg-white/10 hover:text-white" href="#recommendations">Recommendations</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">Contact</h4>
+                        <div class="mt-5 space-y-3">
+                            <a class="flex items-start gap-3 rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-emerald-300/40 hover:bg-white/10" href="mailto:markcleocalbang05@gmail.com">
+                                <span class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-300">
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13 22 6.01V6H2zm20 2.24l-9.4 6.58a1 1 0 0 1-1.2 0L2 8.24V18h20V8.24z" />
+                                    </svg>
+                                </span>
+                                <span class="text-sm leading-relaxed text-slate-300">markcleocalbang05@gmail.com</span>
+                            </a>
+                            <a class="flex items-start gap-3 rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-amber-300/40 hover:bg-white/10" href="tel:+639553745730">
+                                <span class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-amber-400/10 text-amber-300">
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.7 11.7 0 0 0 3.67.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.3 21 3 12.7 3 2a1 1 0 0 1 1-1h3.47a1 1 0 0 1 1 1c0 1.27.2 2.5.59 3.67a1 1 0 0 1-.24 1.01l-2.2 2.11z"></path>
+                                    </svg>
+                                </span>
+                                <span class="text-sm leading-relaxed text-slate-300">+63 955 374 5730</span>
+                            </a>
+                            <a class="flex items-start gap-3 rounded-2xl border border-white/8 bg-white/5 px-4 py-3 transition hover:border-fuchsia-300/40 hover:bg-white/10" href="https://www.facebook.com/Calbang05/" target="_blank" rel="noopener noreferrer">
+                                <span class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-fuchsia-400/10 text-fuchsia-300">
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path d="M22 12.06C22 6.52 17.52 2 11.94 2S2 6.52 2 12.06c0 5 3.66 9.13 8.44 9.94v-7.03H7.9v-2.9h2.54V9.86c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.76l-.44 2.9h-2.32V22c4.78-.81 8.44-4.94 8.44-9.94z"></path>
+                                    </svg>
+                                </span>
+                                <span class="text-sm leading-relaxed text-slate-300">facebook.com/Calbang05</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+                    <p>Built with Laravel, Blade, Tailwind CSS, and a lot of learning in progress.</p>
+                    <p>&copy; {{ now()->year }} Mark Cleo Calbang. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
 
     </body>
 </html>
