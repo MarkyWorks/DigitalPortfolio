@@ -421,44 +421,128 @@
                     </div>
                 </div>
                 <div id="company-services" class="scroll-mt-24 space-y-6">
-                    <h3 class="text-center text-xl font-semibold md:text-left">Services</h3>
-                    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                        <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-                            <h4 class="text-center text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Web Projects</h4>
-                            <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                                They build purpose-driven websites for government units, NGOs, and local enterprises. Each project focuses on accessibility, clear information flow, and long-term maintainability.
+                    <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                        <div>
+                            <h3 class="text-center text-xl font-semibold md:text-left">Services</h3>
+                            <p class="mt-2 max-w-2xl text-center text-sm leading-relaxed text-slate-600 md:text-left dark:text-slate-300">
+                                CVISNET delivers practical digital services that help organizations communicate clearly, operate efficiently, and stay connected.
                             </p>
                         </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-                            <h4 class="text-center text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Multimedia Projects</h4>
-                            <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                                They produce digital content that communicates programs, services, and community initiatives. This includes videos, graphics, and presentation assets tailored to each audience.
-                            </p>
-                        </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-                            <h4 class="text-center text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Web Hosting</h4>
-                            <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                                They provide reliable hosting and domain support to keep websites secure and online. Regular monitoring and updates help ensure performance and uptime.
-                            </p>
-                        </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-                            <h4 class="text-center text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Corporate Designs</h4>
-                            <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                                They develop branding assets such as logos, templates, and identity guides. These help organizations present a consistent and professional image across platforms.
-                            </p>
-                        </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-                            <h4 class="text-center text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Management System</h4>
-                            <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                                They design custom systems to streamline workflows and improve data management. Solutions are built to fit each organization’s processes and reporting needs.
-                            </p>
-                        </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-                            <h4 class="text-center text-sm font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">ICT Training</h4>
-                            <p class="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                                They provide hands-on training and capacity building for government staff, educators, and community leaders. Sessions focus on practical digital skills, tools, and best practices that support daily operations.
-                            </p>
-                        </div>
+                    </div>
+                    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                        <article class="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-sky-300 hover:shadow-2xl hover:shadow-sky-100/70 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-sky-500/40 dark:hover:shadow-sky-950/40">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-sky-400 via-cyan-400 to-emerald-400 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 ring-8 ring-sky-50 transition duration-300 group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white group-hover:ring-sky-100 dark:bg-sky-950/70 dark:text-sky-300 dark:ring-sky-950/60 dark:group-hover:bg-sky-500 dark:group-hover:text-slate-950">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <path d="M4 5h16v10H4z"></path>
+                                        <path d="M8 19h8"></path>
+                                        <path d="M10 15v4"></path>
+                                        <path d="M14 15v4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 transition duration-300 group-hover:text-sky-600 dark:text-slate-400 dark:group-hover:text-sky-300">Web Projects</h4>
+                                    <p class="mt-3 text-sm leading-relaxed text-slate-600 transition duration-300 group-hover:text-slate-700 dark:text-slate-300 dark:group-hover:text-slate-200">
+                                        They build purpose-driven websites for government units, NGOs, and local enterprises. Each project focuses on accessibility, clear information flow, and long-term maintainability.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-fuchsia-300 hover:shadow-2xl hover:shadow-fuchsia-100/70 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-fuchsia-500/40 dark:hover:shadow-fuchsia-950/40">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-fuchsia-400 via-rose-400 to-orange-300 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-700 ring-8 ring-fuchsia-50 transition duration-300 group-hover:scale-110 group-hover:bg-fuchsia-600 group-hover:text-white group-hover:ring-fuchsia-100 dark:bg-fuchsia-950/70 dark:text-fuchsia-300 dark:ring-fuchsia-950/60 dark:group-hover:bg-fuchsia-500 dark:group-hover:text-slate-950">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <rect x="4" y="5" width="16" height="12" rx="2"></rect>
+                                        <path d="M8 9h8"></path>
+                                        <path d="M8 13h5"></path>
+                                        <path d="M17 18l2 2"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 transition duration-300 group-hover:text-fuchsia-600 dark:text-slate-400 dark:group-hover:text-fuchsia-300">Multimedia Projects</h4>
+                                    <p class="mt-3 text-sm leading-relaxed text-slate-600 transition duration-300 group-hover:text-slate-700 dark:text-slate-300 dark:group-hover:text-slate-200">
+                                        They produce digital content that communicates programs, services, and community initiatives. This includes videos, graphics, and presentation assets tailored to each audience.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-emerald-300 hover:shadow-2xl hover:shadow-emerald-100/70 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-emerald-500/40 dark:hover:shadow-emerald-950/40">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-300 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-8 ring-emerald-50 transition duration-300 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:ring-emerald-100 dark:bg-emerald-950/70 dark:text-emerald-300 dark:ring-emerald-950/60 dark:group-hover:bg-emerald-500 dark:group-hover:text-slate-950">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <path d="M5 7h14"></path>
+                                        <path d="M7 11h10"></path>
+                                        <path d="M9 15h6"></path>
+                                        <path d="M4 4h16v16H4z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 transition duration-300 group-hover:text-emerald-600 dark:text-slate-400 dark:group-hover:text-emerald-300">Web Hosting</h4>
+                                    <p class="mt-3 text-sm leading-relaxed text-slate-600 transition duration-300 group-hover:text-slate-700 dark:text-slate-300 dark:group-hover:text-slate-200">
+                                        They provide reliable hosting and domain support to keep websites secure and online. Regular monitoring and updates help ensure performance and uptime.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-amber-300 hover:shadow-2xl hover:shadow-amber-100/70 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-amber-500/40 dark:hover:shadow-amber-950/40">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-orange-400 to-rose-300 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 ring-8 ring-amber-50 transition duration-300 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white group-hover:ring-amber-100 dark:bg-amber-950/70 dark:text-amber-300 dark:ring-amber-950/60 dark:group-hover:bg-amber-400 dark:group-hover:text-slate-950">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <path d="M4 19h16"></path>
+                                        <path d="M7 16V8l5-3 5 3v8"></path>
+                                        <path d="M10 11h4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 transition duration-300 group-hover:text-amber-600 dark:text-slate-400 dark:group-hover:text-amber-300">Corporate Designs</h4>
+                                    <p class="mt-3 text-sm leading-relaxed text-slate-600 transition duration-300 group-hover:text-slate-700 dark:text-slate-300 dark:group-hover:text-slate-200">
+                                        They develop branding assets such as logos, templates, and identity guides. These help organizations present a consistent and professional image across platforms.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-2xl hover:shadow-violet-100/70 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-violet-500/40 dark:hover:shadow-violet-950/40">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-violet-400 via-indigo-400 to-sky-300 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-700 ring-8 ring-violet-50 transition duration-300 group-hover:scale-110 group-hover:bg-violet-600 group-hover:text-white group-hover:ring-violet-100 dark:bg-violet-950/70 dark:text-violet-300 dark:ring-violet-950/60 dark:group-hover:bg-violet-400 dark:group-hover:text-slate-950">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <path d="M6 6h12v12H6z"></path>
+                                        <path d="M10 10h4v4h-4z"></path>
+                                        <path d="M9 2v2"></path>
+                                        <path d="M15 20v2"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 transition duration-300 group-hover:text-violet-600 dark:text-slate-400 dark:group-hover:text-violet-300">Management System</h4>
+                                    <p class="mt-3 text-sm leading-relaxed text-slate-600 transition duration-300 group-hover:text-slate-700 dark:text-slate-300 dark:group-hover:text-slate-200">
+                                        They design custom systems to streamline workflows and improve data management. Solutions are built to fit each organization's processes and reporting needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-rose-300 hover:shadow-2xl hover:shadow-rose-100/70 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-rose-500/40 dark:hover:shadow-rose-950/40">
+                            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-rose-400 via-pink-400 to-fuchsia-300 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-700 ring-8 ring-rose-50 transition duration-300 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white group-hover:ring-rose-100 dark:bg-rose-950/70 dark:text-rose-300 dark:ring-rose-950/60 dark:group-hover:bg-rose-400 dark:group-hover:text-slate-950">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <path d="M12 5v14"></path>
+                                        <path d="M5 12h14"></path>
+                                        <path d="M7 7l10 10"></path>
+                                        <path d="M17 7L7 17"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500 transition duration-300 group-hover:text-rose-600 dark:text-slate-400 dark:group-hover:text-rose-300">ICT Training</h4>
+                                    <p class="mt-3 text-sm leading-relaxed text-slate-600 transition duration-300 group-hover:text-slate-700 dark:text-slate-300 dark:group-hover:text-slate-200">
+                                        They provide hands-on training and capacity building for government staff, educators, and community leaders. Sessions focus on practical digital skills, tools, and best practices that support daily operations.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
