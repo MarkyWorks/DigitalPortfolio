@@ -642,11 +642,11 @@
                         description: 'Default May description.',
                         weeks: [
                             {
-                                img: "{{ asset('images/activities/may-week-1.png') }}",
-                                img2: "{{ asset('images/activities/may-week-1.png') }}",
+                                img: "{{ asset('images/activities/mayweek1_1.png') }}",
+                                img2: "{{ asset('images/activities/mayweek1_2.png') }}",
                                 week: 'Week 1',
                                 date: 'May 4–8, 2026',
-                                description: 'Add your May week 1 description here.',
+                                description: ' I assisted in setting up the Starlink internet connection at San Remigio Beach Club to ensure stable and reliable connectivity. After the installation, I participated in hands-on training and pilot testing activities conducted for all barangays in Medellin, Cebu, which were also held at San Remigio Beach Club. These activities involved assisting participants, observing system processes, and supporting the overall implementation of the training sessions.',
                             },
                             {
                                 img: "{{ asset('images/activities/may-week-1.png') }}",
@@ -669,7 +669,106 @@
 
             <section id="skills" class="scroll-mt-24 mt-16">
                 <p class="text-center text-lg uppercase tracking-[0.45em] font-semibold text-slate-500 dark:text-slate-400">Skills</p>
-                <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Add skills content here.</p>
+                <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                        <div class="flex items-center gap-4">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M8 9l-4 3 4 3"></path>
+                                    <path d="M16 9l4 3-4 3"></path>
+                                    <path d="M14 5l-4 14"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Web Development</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Developed responsive and user-friendly web interfaces using Laravel Blade, Tailwind CSS, and structured layouts. This strengthened my ability to build pages that are both functional and visually organized across different screen sizes.
+                        </p>
+                    </article>
+
+                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                        <div class="flex items-center gap-4">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z"></path>
+                                    <path d="M9 12l2 2 4-4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Creative Design</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Applied design thinking to improve layout, visual balance, and presentation quality in digital projects. This helped me create cleaner interfaces and more engaging materials for users and stakeholders.
+                        </p>
+                    </article>
+
+                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                        <div class="flex items-center gap-4">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M10 14L21 3"></path>
+                                    <path d="M16 3h5v5"></path>
+                                    <path d="M14 10l-4 4"></path>
+                                    <path d="M8.5 8.5l-5 5a2.12 2.12 0 0 0 3 3l5-5"></path>
+                                    <path d="M13 13l5 5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Automation &amp; Tools</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Explored and used tools such as Linux, Docker, and workflow automation platforms to simplify repetitive tasks and improve efficiency. This expanded my understanding of how tools can support development and daily operations.
+                        </p>
+                    </article>
+
+                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                        <div class="flex items-center gap-4">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M9.5 9a2.5 2.5 0 1 1 5 0c0 1.5-1 2.1-1.8 2.8-.7.6-1.2 1.1-1.2 2.2"></path>
+                                    <path d="M12 17h.01"></path>
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Problem Solving</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Improved my ability to analyze issues, debug errors, and refine features based on testing and feedback. Each task required careful thinking, practical adjustments, and a solution-focused approach.
+                        </p>
+                    </article>
+
+                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                        <div class="flex items-center gap-4">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M6 18h12"></path>
+                                    <path d="M7 14h10"></path>
+                                    <path d="M9 10h6"></path>
+                                    <path d="M12 6h.01"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Networking</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Gained exposure to networking concepts through hands-on activities involving connectivity setup, cabling, and communication infrastructure support. This gave me a stronger appreciation of how networks enable reliable digital services.
+                        </p>
+                    </article>
+
+                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                        <div class="flex items-center gap-4">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9.5" cy="7" r="3"></circle>
+                                    <path d="M21 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 4.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Team Collaboration</h3>
+                        </div>
+                        <p class="mt-4 text-sm leading-relaxed text-justify text-slate-600 dark:text-slate-300">
+                            Worked closely with supervisors and fellow interns by sharing ideas, receiving feedback, and contributing to common goals. This strengthened my communication, adaptability, and ability to work effectively within a team environment.
+                        </p>
+                    </article>
+                </div>
             </section>
 
             <section id="reflection" class="scroll-mt-24 mt-16">
