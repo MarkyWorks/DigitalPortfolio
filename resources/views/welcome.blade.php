@@ -752,11 +752,11 @@
             </script>
 
             <section id="skills" class="scroll-mt-24 mt-16">
-                <p class="text-center text-lg uppercase tracking-[0.45em] font-semibold text-slate-500 dark:text-slate-400">Skills</p>
+                <p class="text-center text-lg font-semibold uppercase tracking-[0.45em] text-slate-500 dark:text-slate-400">Skills</p>
                 <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-sky-500/40">
                         <div class="flex items-center gap-4">
-                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 ring-8 ring-sky-50 transition duration-300 group-hover:scale-110 group-hover:bg-sky-600 group-hover:text-white group-hover:ring-sky-100 dark:bg-sky-950/70 dark:text-sky-300 dark:ring-sky-950/60 dark:group-hover:bg-sky-500 dark:group-hover:text-slate-950">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                                     <path d="M8 9l-4 3 4 3"></path>
                                     <path d="M16 9l4 3-4 3"></path>
@@ -770,9 +770,9 @@
                         </p>
                     </article>
 
-                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-fuchsia-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-fuchsia-500/40">
                         <div class="flex items-center gap-4">
-                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-fuchsia-100 text-fuchsia-700 ring-8 ring-fuchsia-50 transition duration-300 group-hover:scale-110 group-hover:bg-fuchsia-600 group-hover:text-white group-hover:ring-fuchsia-100 dark:bg-fuchsia-950/70 dark:text-fuchsia-300 dark:ring-fuchsia-950/60 dark:group-hover:bg-fuchsia-500 dark:group-hover:text-slate-950">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                                     <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z"></path>
                                     <path d="M9 12l2 2 4-4"></path>
@@ -785,9 +785,9 @@
                         </p>
                     </article>
 
-                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-emerald-500/40">
                         <div class="flex items-center gap-4">
-                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 ring-8 ring-emerald-50 transition duration-300 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:ring-emerald-100 dark:bg-emerald-950/70 dark:text-emerald-300 dark:ring-emerald-950/60 dark:group-hover:bg-emerald-500 dark:group-hover:text-slate-950">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                                     <path d="M10 14L21 3"></path>
                                     <path d="M16 3h5v5"></path>
@@ -803,9 +803,9 @@
                         </p>
                     </article>
 
-                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-amber-500/40">
                         <div class="flex items-center gap-4">
-                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 ring-8 ring-amber-50 transition duration-300 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white group-hover:ring-amber-100 dark:bg-amber-950/70 dark:text-amber-300 dark:ring-amber-950/60 dark:group-hover:bg-amber-400 dark:group-hover:text-slate-950">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                                     <path d="M9.5 9a2.5 2.5 0 1 1 5 0c0 1.5-1 2.1-1.8 2.8-.7.6-1.2 1.1-1.2 2.2"></path>
                                     <path d="M12 17h.01"></path>
@@ -819,9 +819,9 @@
                         </p>
                     </article>
 
-                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-violet-500/40">
                         <div class="flex items-center gap-4">
-                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-violet-100 text-violet-700 ring-8 ring-violet-50 transition duration-300 group-hover:scale-110 group-hover:bg-violet-600 group-hover:text-white group-hover:ring-violet-100 dark:bg-violet-950/70 dark:text-violet-300 dark:ring-violet-950/60 dark:group-hover:bg-violet-400 dark:group-hover:text-slate-950">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                                     <path d="M6 18h12"></path>
                                     <path d="M7 14h10"></path>
@@ -836,9 +836,9 @@
                         </p>
                     </article>
 
-                    <article class="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                    <article class="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-rose-300 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:hover:border-rose-500/40">
                         <div class="flex items-center gap-4">
-                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-700 ring-8 ring-rose-50 transition duration-300 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white group-hover:ring-rose-100 dark:bg-rose-950/70 dark:text-rose-300 dark:ring-rose-950/60 dark:group-hover:bg-rose-400 dark:group-hover:text-slate-950">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                                     <path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="9.5" cy="7" r="3"></circle>
