@@ -25,11 +25,11 @@
         <nav class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
 
             <!-- LOGO -->
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 rounded-2xl bg-white px-3 py-2">
                 <img
-                    src="{{ asset('images/cvisnetlogo.png') }}"
-                    alt="CVISNET logo"
-                    class="h-9 w-auto dark:brightness-110 dark:drop-shadow-[0_0_15px_rgba(255,255,255,1)]"
+                    src="{{ asset('images/markyworkslogo1.png') }}"
+                    alt="MarkyWorks logo"
+                    class="h-11 w-auto dark:brightness-110 dark:drop-shadow-[0_0_100px_rgba(255,255,255,1)]"
                 />
             </div>
 
