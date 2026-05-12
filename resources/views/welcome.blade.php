@@ -740,8 +740,8 @@
                                 description: 'I worked on creating a WordPress portfolio website, focusing on designing and organizing the content to showcase my projects, skills, and experiences effectively. After completing the portfolio setup, I continued the development of the CVISNET Help Desk system by improving its features and functionality.',
                             },
                             {
-                                img: "{{ asset('images/activities/may-week-1.png') }}",
-                                img2: "{{ asset('images/activities/may-week-1.png') }}",
+                                img: "{{ asset('images/activities/mayweek3_1.png') }}",
+                                img2: "{{ asset('images/activities/mayweek3_2.png') }}",
                                 week: 'Week 3',
                                 date: 'May 18–22, 2026',
                                 description: 'I continued the development of the CVISNET Help Desk system by adding more functionalities and conducting testing to ensure that the features worked properly and efficiently. This also involved improving the system’s performance, fixing issues, and refining the overall user experience.',
