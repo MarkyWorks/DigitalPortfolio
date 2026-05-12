@@ -980,6 +980,14 @@
 
                 @php
                     $appendixCards = [
+                         [
+                            'title' => 'Resume',
+                            'image' => asset('images/appendices/Resume.png'),
+                        ],
+                        [
+                            'title' => 'Application Letter',
+                            'image' => asset('images/appendices/Applicationletter.png'),
+                        ],
                         [
                             'title' => 'Personal Data Sheet of OJT',
                             'image' => asset('images/appendices/personal Data sheet.jpg'),
@@ -990,7 +998,7 @@
                         ],
                         [
                             'title' => 'OJT Memorandum of Agreement',
-                            'image' => asset('images/appendices/ojt-memorandum-agreement.svg'),
+                            'image' => asset('images/appendices/MOA.png'),
                         ],
                         [
                             'title' => 'Endorsement Letter',
@@ -998,7 +1006,7 @@
 
                         ],
                         [
-                            'title' => 'Barangay Clearances',
+                            'title' => 'Barangay Clearance',
                             'image' => asset('images/appendices/barangay clearance.jpg'),
                         ],
                         [
