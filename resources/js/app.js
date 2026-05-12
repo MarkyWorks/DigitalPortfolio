@@ -56,6 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const activityLightboxWeek = document.getElementById('activity-lightbox-week');
     const activityLightboxDate = document.getElementById('activity-lightbox-date');
     const activityLightboxDescription = document.getElementById('activity-lightbox-description');
+    const appendixCards = Array.from(document.querySelectorAll('[data-appendix-card]'));
+    const appendixLightbox = document.getElementById('appendix-lightbox');
+    const appendixLightboxImage = document.getElementById('appendix-lightbox-image');
+    const appendixLightboxTitle = document.getElementById('appendix-lightbox-title');
 
     const setActiveLink = (targetId) => {
         navLinks.forEach((link) => {
@@ -170,6 +174,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.body.classList.remove('overflow-hidden');
         activityLightbox.setAttribute('aria-hidden', 'true');
+    };
+
+    const openAppendixLightbox = (imageSource, title) => {
+        if (!appendixLightbox || !appendixLightboxImage || !appendixLightboxTitle) {
+            return;
+        }
+
+        appendixLightboxImage.src = imageSource;
+        appendixLightboxImage.alt = title;
+        appendixLightboxTitle.textContent = title;
+
+        appendixLightbox.classList.remove('pointer-events-none', 'opacity-0');
+        appendixLightbox.classList.add('pointer-events-auto', 'opacity-100');
+
+        const lightboxPanel = appendixLightbox.querySelector('.scale-95');
+
+        if (lightboxPanel) {
+            lightboxPanel.classList.remove('scale-95');
+            lightboxPanel.classList.add('scale-100');
+        }
+
+        document.body.classList.add('overflow-hidden');
+        appendixLightbox.setAttribute('aria-hidden', 'false');
+    };
+
+    const closeAppendixLightbox = () => {
+        if (!appendixLightbox) {
+            return;
+        }
+
+        appendixLightbox.classList.remove('pointer-events-auto', 'opacity-100');
+        appendixLightbox.classList.add('pointer-events-none', 'opacity-0');
+
+        const lightboxPanel = appendixLightbox.querySelector('.scale-100');
+
+        if (lightboxPanel) {
+            lightboxPanel.classList.remove('scale-100');
+            lightboxPanel.classList.add('scale-95');
+        }
+
+        document.body.classList.remove('overflow-hidden');
+        appendixLightbox.setAttribute('aria-hidden', 'true');
     };
 
     const renderActivities = (activeMonth) => {
@@ -290,9 +336,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    appendixCards.forEach((appendixCard) => {
+        appendixCard.addEventListener('click', () => {
+            openAppendixLightbox(appendixCard.dataset.appendixImage, appendixCard.dataset.appendixTitle);
+        });
+    });
+
+    appendixLightbox?.addEventListener('click', (event) => {
+        if (event.target.closest('[data-appendix-close]')) {
+            closeAppendixLightbox();
+        }
+    });
+
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && activityLightbox?.getAttribute('aria-hidden') === 'false') {
             closeActivityLightbox();
+        }
+
+        if (event.key === 'Escape' && appendixLightbox?.getAttribute('aria-hidden') === 'false') {
+            closeAppendixLightbox();
         }
     });
 

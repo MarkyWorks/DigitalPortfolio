@@ -973,9 +973,113 @@
             </section>
 
             <section id="appendices" class="scroll-mt-24 mt-16">
-                <p class="text-center text-lg uppercase tracking-[0.45em] font-semibold text-slate-500 dark:text-slate-400">Appendices</p>
-                <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Add appendices content here.</p>
+                <p class="text-center text-lg font-semibold uppercase tracking-[0.45em] text-slate-500 dark:text-slate-400">Appendices</p>
+                <p class="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                    Click any document card to open a full-screen preview.
+                </p>
+
+                @php
+                    $appendixCards = [
+                        [
+                            'title' => 'Personal Data Sheet of OJT',
+                            'image' => asset('images/appendices/personal Data sheet.jpg'),
+                        ],
+                        [
+                            'title' => 'Parents Consent and Waiver',
+                            'image' => asset('images/appendices/waiver.jpg'),
+                        ],
+                        [
+                            'title' => 'OJT Memorandum of Agreement',
+                            'image' => asset('images/appendices/ojt-memorandum-agreement.svg'),
+                        ],
+                        [
+                            'title' => 'Endorsement Letter',
+                            'image' => asset('images/appendices/EndorsementLetter1.jpg'),
+
+                        ],
+                        [
+                            'title' => 'Barangay Clearances',
+                            'image' => asset('images/appendices/barangay clearance.jpg'),
+                        ],
+                        [
+                            'title' => 'Medical Certificate',
+                            'image' => asset('images/appendices/medical Certificate.jpg'),
+                        ],
+                        [
+                            'title' => 'Police Clearance',
+                            'image' => asset('images/appendices/Police clearance.jpg'),
+                        ],
+                        [
+                            'title' => 'Registrar Certification',
+                            'image' => asset('images/appendices/COR.jpg'),
+                        ],
+                    ];
+                @endphp
+
+                <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                    @foreach ($appendixCards as $appendixCard)
+                        <button
+                            type="button"
+                            class="group text-left"
+                            data-appendix-card
+                            data-appendix-title="{{ $appendixCard['title'] }}"
+                            data-appendix-image="{{ $appendixCard['image'] }}"
+                        >
+                            <article class="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white p-5 shadow-sm transition duration-300 group-hover:-translate-y-1 group-hover:border-sky-300 group-hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 dark:group-hover:border-sky-500/40">
+                                <div class="flex aspect-[4/5] items-center justify-center overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-slate-100 via-white to-slate-200 p-4 dark:from-slate-800 dark:via-slate-900 dark:to-slate-800">
+                                    <img
+                                        src="{{ $appendixCard['image'] }}"
+                                        alt="{{ $appendixCard['title'] }}"
+                                        class="h-full w-full rounded-[1.2rem] object-cover shadow-lg transition duration-300 group-hover:scale-[1.03]"
+                                    />
+                                </div>
+                                <div class="mt-4 flex items-center justify-between gap-3">
+                                    <h3 class="text-base font-semibold leading-snug text-slate-900 dark:text-white">{{ $appendixCard['title'] }}</h3>
+                                    <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 transition duration-300 group-hover:bg-sky-600 group-hover:text-white dark:bg-sky-950/60 dark:text-sky-300 dark:group-hover:bg-sky-500 dark:group-hover:text-slate-950">
+                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                            <path d="M7 17L17 7"></path>
+                                            <path d="M9 7h8v8"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </article>
+                        </button>
+                    @endforeach
+                </div>
             </section>
+
+            <div
+                id="appendix-lightbox"
+                class="pointer-events-none fixed inset-0 z-[80] flex items-center justify-center bg-slate-950/90 px-4 py-6 opacity-0 transition duration-300"
+                aria-hidden="true"
+            >
+                <div class="absolute inset-0" data-appendix-close></div>
+                <div class="relative z-10 flex w-full max-w-5xl scale-95 flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-white shadow-2xl transition duration-300 dark:bg-slate-950">
+                    <button
+                        type="button"
+                        class="absolute right-4 top-4 z-20 flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/90 text-slate-700 shadow-lg transition hover:scale-105 hover:text-slate-950 dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-200 dark:hover:text-white"
+                        data-appendix-close
+                        aria-label="Close appendix preview"
+                    >
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M6 6l12 12"></path>
+                            <path d="M18 6l-12 12"></path>
+                        </svg>
+                    </button>
+
+                    <div class="overflow-auto p-4 md:p-6">
+                        <div class="flex justify-center overflow-hidden rounded-[1.5rem] bg-slate-100 p-4 dark:bg-slate-900">
+                            <img
+                                id="appendix-lightbox-image"
+                                src=""
+                                alt=""
+                                class="h-auto max-h-[70vh] w-full max-w-[50%] object-contain"
+                            />
+                        </div>
+                        <h3 id="appendix-lightbox-title" class="mt-5 text-center text-xl font-semibold text-slate-900 dark:text-white"></h3>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="relative mt-20 overflow-hidden border-t border-slate-200/70 bg-slate-950 text-slate-200 dark:border-slate-800">
