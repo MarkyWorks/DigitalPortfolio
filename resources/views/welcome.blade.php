@@ -632,7 +632,7 @@
                             },
                             {
                                 img: "{{ asset('images/Activities/feb4_1.png') }}",
-                                img2: "{{ asset('images/activities/feb4_2.png') }}",
+                                img2: "{{ asset('images/Activities/feb4_2.png') }}",
                                 week: 'Week 4',
                                 date: 'Feb 23–27, 2026',
                                 description: '    This week, I had the opportunity to attend a seminar in Medellin, Cebu, about ISLET Connect by Starlink, where I learned how it works, how to connect, and about related tools and the BEST Barangay e-System. I also participated in data collection, profiling residents in a selected barangay to gather accurate information directly from the community. In addition, my supervisor assigned me a task for the mini project Konek, where I worked on designing the system’s homepage.',
